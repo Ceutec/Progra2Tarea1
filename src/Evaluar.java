@@ -18,11 +18,11 @@ public class Evaluar {
 	}
 		
 	@Test
-	public void churches() {		
-		assertEquals("churches(10) deberia devolver paquetillo", "paquetillo", Ejercicios.churches(10));
-		assertEquals("churches(70) deberia devolver paquetito", "paquetin", Ejercicios.churches(70));
-		assertEquals("churches(150) deberia devolver paquetote", "paquetote", Ejercicios.churches(150));
-		assertEquals("churches(400) deberia devolver paqueton", "paqueton", Ejercicios.churches(400));
+	public void obtenerPrecio() {		
+		assertEquals("error", "gratis", Ejercicios.obtenerPrecio(0));
+		assertEquals("error", "barato", Ejercicios.obtenerPrecio(70));
+		assertEquals("error", "normal", Ejercicios.obtenerPrecio(150));
+		assertEquals("error", "caro", Ejercicios.obtenerPrecio(400));
 	}
 	
 	@Test
@@ -72,7 +72,7 @@ public class Evaluar {
 	
 	@Test
 	public void funcionRecursiva() {
-		assertEquals("El funcionRecursiva de 0 es 2", 0, Ejercicios.funcionRecursiva(0));
+		assertEquals("El funcionRecursiva de 0 es 2", 1, Ejercicios.funcionRecursiva(0));
 		assertEquals("El funcionRecursiva de 2 es 5", 5, Ejercicios.funcionRecursiva(2));
 		assertEquals("El funcionRecursiva de 3 es 11", 11, Ejercicios.funcionRecursiva(3));
 	}

@@ -6,12 +6,12 @@ public class Ejercicios
 		return false;
 	}
 	
-	//devuelve "paquetillo" si lempiras es menor que 50
-	//devuelve "paquetin" si lempiras es menor que 100
-	//devuelve "paquetote" si lempiras es menor que 200
-	//de lo contrario devuelve paqueton
+	//devuelve "gratis" si lempiras es igual a 0
+	//devuelve "barato" si lempiras es menor que 100
+	//devuelve "normal" si lempiras es menor que 200
+	//de lo contrario devuelve caro
 	//nota: solo aceptan minusculas
-	static String churches(int lempiras)
+	static String obtenerPrecio(int lempiras)
 	{
 		return "";
 	}
@@ -63,7 +63,7 @@ public class Ejercicios
 	
 	//realizar la siguiente funcion recursiva:
 	//funcionRecursiva(n) = funcionRecursiva(n-1)*2+1
-	//donde: funcionRecursiva(0) = 0 y funcionRecursiva(1) = 2
+	//donde: funcionRecursiva(0) = 1 y funcionRecursiva(1) = 2
 	static int funcionRecursiva(int num)
 	{
 		return -1;
